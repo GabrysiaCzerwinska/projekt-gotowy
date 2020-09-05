@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Style TargetType="Frame" x:Key="MainPageFrameStyle">
+        <Setter Property="CornerRadius" Value="50"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="HorizontalOptions" Value="Center"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="HeightRequest" Value="100"/>
+        <Setter Property="WidthRequest" Value="100"/>
+        <Setter Property="HasShadow" Value="False"/>
+        <Setter Property="BackgroundColor" Value="{StaticResource QualityMeterBackgroundColor}"/>
+        <Setter Property="BorderColor" Value="{StaticResource QualityMeterFrameColor}" />
+    </Style>
+    <Style TargetType="Label" x:Key="MainScoreConclusionLabel">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="TextColor" Value="Black"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+    </Style>
+    <Style TargetType="Label" x:Key="MainScoreConclusionDetailLabel">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="TextColor" Value="Black"/>
+    </Style>
+    <Style TargetType="Span" x:Key="MainScoreSpan">
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="TextColor" Value="Black"/>
+        <Setter Property="FontSize" Value="32"/>
+    </Style>
+
+    <Style TargetType="ImageButton" x:Key="HelpButtonStyle">
+        <Setter Property="Padding" Value="12,24" />
+        <Setter Property="HorizontalOptions" Value="End" />
+        <Setter Property="VerticalOptions" Value="Start" />
+        <Setter Property="WidthRequest" Value="48" />
+        <Setter Property="HeightRequest" Value="72" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+    </Style>
+    <Style TargetType="Slider" x:Key="SliderStyle">
+        <Setter Property="IsEnabled" Value="False"/>
+        <Setter Property="MaximumTrackColor" Value="Gray" />
+        <Setter Property="MinimumTrackColor" Value="CornflowerBlue" />
+        <Setter Property="ThumbColor" Value="CornflowerBlue" />
+    </Style>
+
+</ResourceDictionary>
